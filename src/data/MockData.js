@@ -14,46 +14,46 @@ export const NavbarData = [
         title:"Contact",
         link:'/'
     },
-    {
-        id:4,
-        title:"Faq",
-        link:'/'
-    }
+    // {
+    //     id:4,
+    //     title:"Faq",
+    //     link:'/'
+    // }
 ]
 
 export const HeroData = [
     {
-        id:1,
-        title:`New Furniture Collection Trends in ${new Date().getFullYear()}`,
-        subtitle: "Best Furniture For Your Castle.",
-        image:"/images/sofa.svg",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque eget neque ultricies scelerisque.",
-        buttonText:"Learn More",
-        price:"$40.99",
-        modal:"Furniture",
-        bgColor:"#e85950"
+        id: 1,
+        title: `Redefine Your Style — Women's Fashion ${new Date().getFullYear()}`,
+        subtitle: "Elegance Meets Everyday Comfort.",
+        image: "/images/img-3.jpeg",
+        description: "Discover our curated collection of women's fashion — from chic everyday staples to head-turning statement pieces that celebrate every body.",
+        buttonText: "Shop the Look",
+        price: "$40.99",
+        modal: "Clothing",
+        bgColor: "#e85950"
     },
     {
-        id:2,
-        title:"Get our new noise canceling headsets",
-        subtitle: "Best headsets For Your playlists.",
-        image:"/images/headset.svg",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque eget neque ultricies scelerisque.",
-        buttonText:"Learn More",
-        price:"$40.99",
-        modal:"Headset",
-        bgColor:"#24b4bc"
+        id: 2,
+        title: "Handbags That Speak Before You Do",
+        subtitle: "Carry Confidence Everywhere You Go.",
+        image: "/images/bag-1.jpeg",
+        description: "From boardrooms to brunches, our luxury handbag collection blends sophistication with style — because every outfit deserves the perfect finishing touch.",
+        buttonText: "Explore Bags",
+        price: "$40.99",
+        modal: "Handbag",
+        bgColor: "#24b4bc"
     },
     {
-        id:3,
-        title:"Men Fashion Solid Color Top Sneakers",
-        subtitle: "Best Sneakers For Events.",
-        image:"/images/air.png",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque eget neque ultricies scelerisque.",
-        buttonText:"Learn More",
-        price:"$40.99",
-        modal:"Sneakers",
-        bgColor:"#7aa10e"
+        id: 3,
+        title: "Vintage Shirts That Never Go Out of Style",
+        subtitle: "Classic Fits for Every Body, Every Vibe.",
+        image: "/images/shirt-1.jpeg",
+        description: "Explore our unisex vintage shirt collection — timeless prints, relaxed fits, and effortless cool that looks great on everyone. Old school charm, new school attitude.",
+        buttonText: "Shop Vintage",
+        price: "$40.99",
+        modal: "Vintage Shirt",
+        bgColor: "#7aa10e"
     }
 ]
 
@@ -62,65 +62,115 @@ export const FeaturedProducts = [
         id:1,
         title:"Cantilever chair",
         price:"39.99",
-        image:"/images/chair.svg",
+        image:"/images/1.jpeg",
         code: "Y523201"
     },
     {
-        id:2,
+        id:12,
         title:"Cantilever chair",
         price:"49.99",
-        image:"/images/headset3.png",
+        image:"/images/12.jpeg",
         code: "Y523201"
     },
     {
         id:3,
         title:"Cantilever chair",
         price:"28.99",
-        image:"/images/chair1.svg",
-        code: "Y523201"
-    },
-    {
-        id:4,
-        title:"Cantilever chair",
-        price:"99.99",
-        image:"/images/watch.svg",
-        code: "Y523201"
-    },
-    {
-        id:5,
-        title:"Cantilever chair",
-        price:"39.99",
-        image:"/images/chair2.svg",
+        image:"/images/3.jpeg",
         code: "Y523201"
     },
     {
         id:6,
         title:"Cantilever chair",
         price:"49.99",
-        image:"/images/chair4.svg",
+        image:"/images/6.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:4,
+        title:"Cantilever chair",
+        price:"99.99",
+        image:"/images/4.jpeg",
         code: "Y523201"
     },
     {
         id:7,
         title:"Cantilever chair",
         price:"28.99",
-        image:"/images/drone.png",
+        image:"/images/7.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:9,
+        title:"Cantilever chair",
+        price:"99.99",
+        image:"/images/9.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:2,
+        title:"Cantilever chair",
+        price:"49.99",
+        image:"/images/2.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:10,
+        title:"Cantilever chair",
+        price:"39.99",
+        image:"/images/10.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:11,
+        title:"Cantilever chair",
+        price:"28.99",
+        image:"/images/11.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:13,
+        title:"Cantilever chair",
+        price:"28.99",
+        image:"/images/13.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:5,
+        title:"Cantilever chair",
+        price:"39.99",
+        image:"/images/5.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:14,
+        title:"Cantilever chair",
+        price:"99.99",
+        image:"/images/14.jpeg",
+        code: "Y523201"
+    },
+    {
+        id:16,
+        title:"Cantilever chair",
+        price:"49.99",
+        image:"/images/16.jpeg",
         code: "Y523201"
     },
     {
         id:8,
         title:"Cantilever chair",
         price:"99.99",
-        image:"/images/chair3.svg",
+        image:"/images/8.jpeg",
         code: "Y523201"
     },
     {
-        id:8,
+        id:15,
         title:"Cantilever chair",
-        price:"99.99",
-        image:"/images/headset2.svg",
+        price:"39.99",
+        image:"/images/15.jpeg",
         code: "Y523201"
-    }
+    },
+
 ]
 
 export const LatestProductTabHeaders = ["All", "New Arrival", "Best Seller", "Featured", "Special Offer"]
@@ -131,7 +181,7 @@ export const LatestProducts = [
         title:"Comfort Handy Craft",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair5.png",
+        image:"/images/17.jpeg",
         category:"New Arrival"
     },
     {
@@ -139,15 +189,15 @@ export const LatestProducts = [
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair6.png",
+        image:"/images/18.jpeg",
         category:"Best Seller"
     },
     {
         id:3,
-        title:"Cantilever chair",
+        title:"Zara Boxers",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair7.png",
+        image:"/images/19.jpeg",
         category:"Special Offer"
     },
     {
@@ -155,7 +205,7 @@ export const LatestProducts = [
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair8.png",
+        image:"/images/20.jpeg",
         category:"Featured"
     },
     {
@@ -163,7 +213,7 @@ export const LatestProducts = [
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair3.svg",
+        image:"/images/21.jpeg",
         category:"Best Seller"
     },
     {
@@ -171,35 +221,35 @@ export const LatestProducts = [
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair2.svg",
+        image:"/images/22.jpeg",
         category:"New Arrival"
     }
 ]
 
 export const Offers = [
     {
-        id:1,
-        title:"10% Off on All Furniture",
-        image:"/images/free.png",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque eget."
+        id: 1,
+        title: "Free Shipping on Orders Over $50",
+        image: "/images/free.png",
+        description: "Shop your favourite styles and enjoy free delivery straight to your door — no hidden fees, just great fashion."
     },
     {
-        id:2,
-        title:"10% Off on All Furniture",
-        image:"/images/cashback.png",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque eget."
+        id: 2,
+        title: "Easy Returns & Cashback",
+        image: "/images/cashback.png",
+        description: "Not the perfect fit? No worries. Enjoy hassle-free returns and instant cashback — shopping with us is always risk-free."
     },
     {
-        id:3,
-        title:"10% Off on All Furniture",
-        image:"/images/premium-quality.png",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque eget."
+        id: 3,
+        title: "Premium Quality Pieces",
+        image: "/images/premium-quality.png",
+        description: "Every item is carefully selected for quality, style, and comfort — because you deserve nothing but the best."
     },
     {
-        id:4,
-        title:"24/7 Support",
-        image:"/images/24-hours-support.png",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non neque eget."
+        id: 4,
+        title: "24/7 Customer Support",
+        image: "/images/24-hours-support.png",
+        description: "Our friendly team is always here for you — any time, any question. Your satisfaction is our top priority."
     },
 ]
 
@@ -209,28 +259,28 @@ export const TrendingProducts = [
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair4.svg"
+        image:"/images/23.jpeg",
     },
     {
         id:2,
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair9.png"
+        image:"/images/24.jpeg"
     },
     {
         id:3,
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair10.png"
+        image:"/images/25.jpeg"
     },
     {
         id:4,
         title:"Cantilever chair",
         price:"39.99",
         oldPrice: "39.99",
-        image:"/images/chair5.png"
+        image:"/images/26.jpeg"
     }
 ]
 

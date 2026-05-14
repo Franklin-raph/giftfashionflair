@@ -4,8 +4,8 @@ import { LuFacebook, LuInstagram, LuTwitter } from 'react-icons/lu'
 
 const Footer = () => {
   return (
-    <div>
-        <div className='bg-[#EEEFFB] py-[3rem] mt-[7rem]'>
+    <div className=' mt-[7rem]'>
+        {/* <div className='bg-[#EEEFFB] py-[3rem] mt-[7rem]'>
             <div className='grid grid-cols-2 py-2 px-[4rem] justify-between max-w-[1600px] mx-auto'>
                 <div className='w-[500px]'>
                     <h1 className='font-[600] mb-4 text-[30px]'>Hekto</h1>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         <div className='bg-[#E7E4F8] text-[#9DA0AE]'>
             <div className='flex w-[1200px] justify-between mx-auto py-[1rem]'>
                 <p>&copy; Hekto - All Rights Reserved</p>

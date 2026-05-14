@@ -34,7 +34,7 @@ const Home = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndev) => (prevIndev + 1) % HeroData.length);
-        }, 3000);
+        }, 5000);
         return () => clearInterval(interval);
     },[currentIndex])
 
@@ -166,7 +166,13 @@ const Home = () => {
             </section>
         </div>
         <section className='mt-[7rem] max-w-[1200px] mx-auto px-10 md:px-0'>
-            <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>Featured Products</h1>
+            <div className='flex items-center justify-between'>
+                <div className='flex flex-col'>
+                    <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>Featured Products</h1>
+                    <p className='text-center text-[#8A8FB9]'>Discover our curated collection of featured products</p>
+                </div>
+                <Link to="/products" className='text-[#151875] font-bold cursor-pointer underline'>View all</Link>
+            </div>
             <div className='mt-[2rem] flex items-center justify-center'>
             <Swiper
                 autoplay={{
@@ -226,9 +232,14 @@ const Home = () => {
             </div>
             <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-10'>
                 {
-                    LatestProducts.filter(product => activeTab === "All" || product.category === activeTab).map(product => {
+                    LatestProducts.filter(product => activeTab === "All" || product.category === activeTab).map((product, index) => {
                         return(
-                            <LatestProductCard product={product}/>
+                                <LatestProductCard
+                                    key={`${product.source}-${product.id ?? index}`}
+                                    product={product}
+                                    allProducts={LatestProducts}   // 👈 pass the full list
+                                    productIndex={index}     // 👈 pass current index
+                                />
                         )
                     })
                 }
@@ -236,7 +247,7 @@ const Home = () => {
         </section>
 
         <section className='mt-[7rem] max-w-[1200px] mx-auto px-10 md:px-0'>
-            <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>What Shopex Offer!</h1>
+            <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>What We Offer.</h1>
             <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mt-[2rem]'>
                 {
                     Offers.map(offer => {
@@ -249,20 +260,20 @@ const Home = () => {
         </section>
 
         <section className='bg-[#F1F0FF] mt-[7rem]'>
-            <div className='max-w-[1200px] mx-auto px-10 md:px-0 flex items-center justify-center'>
-                <img src="/images/cushion.png" alt="" className='w-[400px]'/>
+            <div className='max-w-[1200px] mx-auto px-10 md:px-0 flex items-center justify-center gap-[4rem] py-[2rem] flex-col md:flex-row'>
+                <img src="/images/29.jpeg" alt="" className='w-[400px]'/>
                 <div className='w-[450px]'>
-                    <h1 className='text-[#151875] text-[28px]'>Unique Features Of leatest & Trending Poducts</h1>
+                    <h1 className='text-[#151875] text-[28px]'>Unique Features Of Our Latest Co-Ord Set Collection</h1>
                     <ul className='text-[#ACABC3] text-[14px] my-7'>
-                        <li className='flex items-center gap-2'> <span className='bg-[#F52B70] p-1 rounded-full'></span> All frames constructed with hardwood solids and laminates</li>
-                        <li className='flex items-center gap-2 my-2'> <span className='bg-[#2B2BF5] p-1 rounded-full'></span> Reinforced with double wood dowels, glue, screw - nails corner blocks and machine nails</li>
-                        <li className='flex items-center gap-2'> <span className='bg-[#2BF5CC] p-1 rounded-full'></span> Arms, backs and seats are structurally reinforced</li>
+                        <li className='flex items-center gap-2'> <span className='bg-[#F52B70] p-1 rounded-full'></span> Perfectly matched top and trouser sets available in 5 rich colours — green, khaki, brown, black & white</li>
+                        <li className='flex items-center gap-2 my-2'> <span className='bg-[#2B2BF5] p-1 rounded-full'></span> Lace-up neckline design with subtle embroidery detail — effortlessly stylish for any occasion</li>
+                        <li className='flex items-center gap-2'> <span className='bg-[#2BF5CC] p-1 rounded-full'></span> Relaxed, breathable fabric with an elastic waistband — comfort and style in one clean look</li>
                     </ul>
                     <div className='flex items-center gap-3'>
                         <button className='bg-[#FB2E86] text-white py-[9px] px-8 rounded-[2px]'>Add To Cart</button>
                         <div className='text-[#151875] text-[14px]'>
-                            <p>B&B Italian Sofa</p>
-                            <p className='font-[300]'>$32.00</p>
+                            <p>Unisex Co-Ord Set</p>
+                            <p className='font-[300]'>$40.99</p>
                         </div>
                     </div>
                 </div>
@@ -280,7 +291,7 @@ const Home = () => {
                     })
                 }
             </div>
-            <div className='grid grid-cols-3 mt-6 gap-[4rem]'>
+            {/* <div className='grid grid-cols-3 mt-6 gap-[4rem]'>
                 <div className='bg-[#FFF6FB] w-[400px] p-5'>
                     <div>
                         <h3 className='text-[#151875] text-[22px]'>23% off in all products</h3>
@@ -304,7 +315,7 @@ const Home = () => {
                         })
                     }
                 </div>
-            </div>
+            </div> */}
         </section>
     </div>
   )
