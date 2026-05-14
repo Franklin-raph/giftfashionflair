@@ -260,11 +260,11 @@ const Home = () => {
         </section>
 
         <section className='bg-[#F1F0FF] mt-[7rem]'>
-            <div className='max-w-[1200px] mx-auto px-10 md:px-0 flex items-center justify-center gap-[4rem] py-[2rem] flex-col md:flex-row'>
+            <div className='max-w-[1200px] mx-auto px-5 md:px-0 flex items-center justify-center md:gap-[4rem] gap-[2rem] py-[2rem] flex-col md:flex-row'>
                 <img src="/images/29.jpeg" alt="" className='w-[400px]'/>
-                <div className='w-[450px]'>
-                    <h1 className='text-[#151875] text-[28px]'>Unique Features Of Our Latest Co-Ord Set Collection</h1>
-                    <ul className='text-[#ACABC3] text-[14px] my-7'>
+                <div className='md:w-[450px]'>
+                    <h1 className='text-[#151875] md:text-[28px] text-[18px]'>Unique Features Of Our Latest Co-Ord Set Collection</h1>
+                    <ul className='text-[#ACABC3] text-[14px] mb-7 mt-4'>
                         <li className='flex items-center gap-2'> <span className='bg-[#F52B70] p-1 rounded-full'></span> Perfectly matched top and trouser sets available in 5 rich colours — green, khaki, brown, black & white</li>
                         <li className='flex items-center gap-2 my-2'> <span className='bg-[#2B2BF5] p-1 rounded-full'></span> Lace-up neckline design with subtle embroidery detail — effortlessly stylish for any occasion</li>
                         <li className='flex items-center gap-2'> <span className='bg-[#2BF5CC] p-1 rounded-full'></span> Relaxed, breathable fabric with an elastic waistband — comfort and style in one clean look</li>
@@ -280,9 +280,9 @@ const Home = () => {
             </div>
         </section>
 
-        <section className='mt-[7rem] max-w-[1200px] mx-auto px-10 md:px-0'>
-            <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>Trending Products</h1>
-            <div className='grid grid-cols-4 gap-5'>
+        <section className='mt-[7rem] max-w-[1200px] mx-auto px-4 md:px-0'>
+            <h1 className='text-center text-[#1A0B5B] font-bold md:text-[40px] text-[20px]'>Trending Products</h1>
+            <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-5'>
                 {
                     TrendingProducts.map(card => {
                         return(
@@ -290,6 +290,9 @@ const Home = () => {
                         )
                     })
                 }
+            </div>
+            <div className='flex items-center justify-center mt-7'>
+                <Link to="/products" className='text-[#151875] font-bold cursor-pointer underline'>See more</Link>
             </div>
             {/* <div className='grid grid-cols-3 mt-6 gap-[4rem]'>
                 <div className='bg-[#FFF6FB] w-[400px] p-5'>
