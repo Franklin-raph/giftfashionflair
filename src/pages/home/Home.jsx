@@ -165,11 +165,11 @@ const Home = () => {
                 </div>
             </section>
         </div>
-        <section className='mt-[7rem] max-w-[1200px] mx-auto px-10 md:px-0'>
+        <section className='mt-[7rem] max-w-[1200px] mx-auto px-5 md:px-0'>
             <div className='flex items-center justify-between'>
                 <div className='flex flex-col'>
-                    <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>Featured Products</h1>
-                    <p className='text-center text-[#8A8FB9]'>Discover our curated collection of featured products</p>
+                    <h1 className='text-center text-[#1A0B5B] font-bold md:text-[40px] text-[20px]'>Featured Products</h1>
+                    <p className='text-center text-[#8A8FB9] hidden md:block'>Discover our curated collection of featured products</p>
                 </div>
                 <Link to="/products" className='text-[#151875] font-bold cursor-pointer underline'>View all</Link>
             </div>
@@ -219,18 +219,18 @@ const Home = () => {
             </div>
         </section>
 
-        <section className='mt-[7rem] max-w-[1200px] mx-auto px-10 md:px-0'>
-            <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>Latest Products</h1>
-            <div className='flex items-center justify-center mt-4 text-[#151875] gap-10'>
+        <section className='mt-[7rem] max-w-[1200px] mx-auto px-3 md:px-0'>
+            <h1 className='text-center text-[#1A0B5B] font-bold md:text-[40px] text-[20px]'>Latest Products</h1>
+            <div className='flex items-center justify-center mt-2 text-[#151875] md:gap-10 gap-5'>
                 {
                     LatestProductTabHeaders.map(header => {
                         return(
-                            <p className={activeTab === header ? 'text-[#FB2E86] underline cursor-pointer' : 'cursor-pointer'} onClick={() => setActiveTab(header)}>{header}</p>
+                            <p className={activeTab === header ? 'text-[#FB2E86] underline cursor-pointer md:text-[16px] text-[12px]' : 'md:text-[16px] text-[12px] cursor-pointer'} onClick={() => setActiveTab(header)}>{header}</p>
                         )
                     })
                 }
             </div>
-            <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-10'>
+            <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-4 md:mt-10 mt-6'>
                 {
                     LatestProducts.filter(product => activeTab === "All" || product.category === activeTab).map((product, index) => {
                         return(
@@ -247,7 +247,7 @@ const Home = () => {
         </section>
 
         <section className='mt-[7rem] max-w-[1200px] mx-auto px-10 md:px-0'>
-            <h1 className='text-center text-[#1A0B5B] font-bold text-[40px]'>What We Offer.</h1>
+            <h1 className='text-center text-[#1A0B5B] font-bold md:text-[40px] text-[20px]'>What We Offer.</h1>
             <div className='grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 mt-[2rem]'>
                 {
                     Offers.map(offer => {

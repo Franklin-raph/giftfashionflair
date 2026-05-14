@@ -43,7 +43,7 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
   return (
     <>
       <div key={product.id} className='group cursor-pointer'>
-        <div className='bg-[#F7F7F7] flex items-center justify-center py-9 flex-col relative h-[300px] group-hover:bg-white'>
+        <div className='bg-[#F7F7F7] flex items-center justify-center px-3 py-6 flex-col relative h-[300px] group-hover:bg-white'>
           <div className='group-hover:flex items-center flex-col absolute left-2 bottom-2 gap-3 hidden'>
             {/* <div className='text-[#2F1AC4] bg-[#EEEFFB] p-2 text-[18px] rounded-full cursor-pointer'>
                         <BiCart />
@@ -61,14 +61,14 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
         </div>
         <div className='flex items-center justify-between mt-2'>
           <p className='text-[#151875] text-[14px] underline'>{product.title}</p>
-          <p className='text-[#151875] text-[14px]'>${product.price} <span className='text-[#FB2448] ml-4 text-[12px] line-through'>${product.oldPrice}</span></p>
+          <p className='text-[#151875] text-[14px]'>${product.price}</p>
         </div>
       </div>
 
       {/* Modal */}
       {showModal && (
         <div
-          className='fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4'
+          className='fixed inset-0 bg-black/50 z-[1000] flex items-center justify-center px-4'
           onClick={() => setShowModal(false)}
         >
           <div
