@@ -27,7 +27,7 @@ const FeaturedCard = ({card}) => {
                 <div className='bg-[#00009D] py-[2px] px-2 rounded-full group-hover:bg-[#FFEAC1]'></div>
             </div>
             {/* <p className='text-[#151875] mb-3 group-hover:text-white'>Code - {card.code}</p> */}
-            <p className='text-[#151875] pb-2 group-hover:text-white'>${card.price}</p>
+            <p className='text-[#151875] pb-2 group-hover:text-white'>₦{card.price}</p>
         </div>
     </div>
   )
