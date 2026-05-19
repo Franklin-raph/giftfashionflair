@@ -1,5 +1,8 @@
 import React, { useState, useRef } from 'react'
 import { BiCart, BiHeart, BiX, BiCamera, BiChevronLeft, BiChevronRight } from 'react-icons/bi'
+import { FaWhatsapp } from 'react-icons/fa'
+
+const SELLER_WHATSAPP = '2347088501332' // seller's number in international format (234 = Nigeria)
 
 const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
   const [showModal, setShowModal] = useState(false)
@@ -32,6 +35,18 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
     } catch (err) {
       console.error('Snapshot failed:', err)
     }
+  }
+
+  const handleWhatsApp = () => {
+    const message =
+      `Hi! I'm interested in this item from your store:%0A%0A` +
+      `🛍️ *${currentProduct.title}*%0A` +
+      `💰 *Price: ₦${currentProduct.price}*%0A` +
+      `🖼️ Image: ${currentProduct.image}%0A%0A` +
+      `Please let me know if it's available. Thank you!`
+
+    const url = `https://wa.me/${SELLER_WHATSAPP}?text=${message}`
+    window.open(url, '_blank')
   }
 
   const openModal = () => {
@@ -171,6 +186,18 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
                 <BiHeart />
               </button> */}
             </div>
+
+            {/* WhatsApp Button */}
+            <div className='flex items-center gap-3 mt-2'>
+              <button
+                onClick={handleWhatsApp}
+                className='bg-[#25D366] text-white py-[10px] px-8 rounded-[2px] text-[14px] flex items-center justify-center gap-2 hover:bg-[#1ebe5d] transition-colors w-full text-center'
+              >
+                <FaWhatsapp className='text-[18px]' />
+                Send via WhatsApp
+              </button>
+            </div>
+
           </div>
         </div>
       )}

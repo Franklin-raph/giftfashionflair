@@ -105,7 +105,7 @@ const Home = () => {
 
             <div className='bg-[#F2F0FF] relative'>
                 <img src="/images/lamp.svg" className='absolute top-[-85px] left-[-60px] hidden xl:block' alt="" />
-                <section className='flex md:justify-between items-center flex-col md:flex-row h-screen md:h-[650px] relative max-w-[1600px] mx-auto px-[4rem] gap-5'>
+                <section className='flex md:justify-between items-center flex-col md:flex-row h-screen md:h-[650px] relative max-w-[1600px] mx-auto px-[2rem] md:px-[4rem] gap-5'>
                     <div className='py-14 md:pb-0 md:pt-[6rem] lg:w-[45%] md:w-[70%] w-[98%]'>
                         <div className='text-center md:text-left'>
                             <AnimatePresence mode='wait'>
