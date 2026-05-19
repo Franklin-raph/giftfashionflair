@@ -246,7 +246,7 @@ const Home = () => {
                 </div>
                 <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-4 md:mt-10 mt-6'>
                     {
-                        LatestProducts.filter(product => activeTab === "All" || product.category === activeTab).map((product, index) => {
+                        LatestProducts.filter(product => activeTab === "All" || product.category === activeTab).slice(0, 6).map((product, index) => {
                             return (
                                 <LatestProductCard
                                     key={`${product.source}-${product.id ?? index}`}
@@ -284,10 +284,10 @@ const Home = () => {
                             <li className='flex items-center gap-2'><span className='bg-[#2BF5CC] p-1 rounded-full'></span> Relaxed, breathable fabric with an elastic waistband — comfort and style in one clean look</li>
                         </ul>
                         <div className='flex items-center gap-3'>
-                            <button className='bg-[#FB2E86] text-white py-[9px] px-8 rounded-[2px]'>Add To Cart</button>
+                            <button className='bg-[#FB2E86] text-white py-[9px] px-8 rounded-[2px]'>Contact Seller</button>
                             <div className='text-[#151875] text-[14px]'>
                                 <p>Unisex Co-Ord Set</p>
-                                <p className='font-[300]'>$40.99</p>
+                                <p className='font-[300]'>₦40.99</p>
                             </div>
                         </div>
                     </div>

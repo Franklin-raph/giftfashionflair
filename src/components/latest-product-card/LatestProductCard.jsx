@@ -61,7 +61,7 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
         </div>
         <div className='flex items-center justify-between mt-2'>
           <p className='text-[#151875] text-[14px] underline'>{product.title}</p>
-          <p className='text-[#151875] text-[14px]'>${product.price}</p>
+          <p className='text-[#151875] text-[14px]'>₦{product.price}</p>
         </div>
       </div>
 
@@ -140,20 +140,20 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
             )}
 
             {/* Details */}
-            <div className='mt-4'>
+            <div className='mt-3 flex justify-between items-start gap-4'>
               <p className='text-[#151875] font-bold text-[20px]'>{currentProduct.title}</p>
 
-              {currentProduct.category && (
+              {/* {currentProduct.category && (
                 <span className='text-[11px] bg-[#F2F0FF] text-[#8A8FB9] px-3 py-1 rounded-full mt-1 inline-block'>
                   {currentProduct.category}
                 </span>
-              )}
+              )} */}
 
-              <div className='flex items-center gap-4 mt-4'>
-                <p className='text-[#FB2E86] font-bold text-[22px]'>${currentProduct.price}</p>
-                {currentProduct.oldPrice && (
-                  <p className='text-[#8A8FB9] text-[16px] line-through'>${currentProduct.oldPrice}</p>
-                )}
+              <div className='flex items-center gap-4'>
+                <p className='text-[#FB2E86] font-bold text-[22px]'>₦{currentProduct.price}</p>
+                {/* {currentProduct.oldPrice && (
+                  <p className='text-[#8A8FB9] text-[16px] line-through'>₦{currentProduct.oldPrice}</p>
+                )} */}
               </div>
 
               {currentProduct.description && (
@@ -162,13 +162,14 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
             </div>
 
             {/* Actions */}
-            <div className='flex items-center gap-3 mt-6'>
-              <button className='bg-[#FB2E86] text-white py-[10px] px-8 rounded-[2px] text-[14px] flex items-center gap-2 hover:bg-[#e0206e] transition-colors'>
-                <BiCart className='text-[18px]' /> Add To Cart
+            <div className='flex items-center gap-3 mt-3'>
+              <button className='bg-[#FB2E86] text-white py-[10px] px-8 rounded-[2px] text-[14px] flex items-center justify-center gap-2 hover:bg-[#e0206e] transition-colors w-full text-center'>
+                Contact seller
+                {/* <BiCart className='text-[18px]' /> Add To Cart */}
               </button>
-              <button className='border border-[#FB2E86] text-[#FB2E86] py-[10px] px-4 rounded-[2px] text-[18px] hover:bg-[#FFF0F6] transition-colors'>
+              {/* <button className='border border-[#FB2E86] text-[#FB2E86] py-[10px] px-4 rounded-[2px] text-[18px] hover:bg-[#FFF0F6] transition-colors'>
                 <BiHeart />
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

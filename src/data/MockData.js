@@ -60,113 +60,113 @@ export const HeroData = [
 export const FeaturedProducts = [
     {
         id:1,
-        title:"Cantilever chair",
+        title:"Cantilever chair,,,,",
         price:"39.99",
         image:"/images/1.jpeg",
         code: "Y523201"
     },
     {
         id:12,
-        title:"Cantilever chair",
-        price:"49.99",
+        title:"Bag",
+        price:"13,000",
         image:"/images/12.jpeg",
         code: "Y523201"
     },
     {
         id:3,
-        title:"Cantilever chair",
-        price:"28.99",
+        title:"Calvinklein short",
+        price:"13,000",
         image:"/images/3.jpeg",
         code: "Y523201"
     },
     {
         id:6,
-        title:"Cantilever chair",
-        price:"49.99",
+        title:"Basic top (foreign)",
+        price:"7,500",
         image:"/images/6.jpeg",
         code: "Y523201"
     },
     {
         id:4,
-        title:"Cantilever chair",
-        price:"99.99",
+        title:"Baggy short",
+        price:"15,000",
         image:"/images/4.jpeg",
         code: "Y523201"
     },
     {
         id:7,
-        title:"Cantilever chair",
-        price:"28.99",
+        title:"Stripe basic top",
+        price:"7,000",
         image:"/images/7.jpeg",
         code: "Y523201"
     },
     {
         id:9,
-        title:"Cantilever chair",
-        price:"99.99",
+        title:"Luxury tote bag",
+        price:"11,000",
         image:"/images/9.jpeg",
         code: "Y523201"
     },
     {
         id:2,
-        title:"Cantilever chair",
-        price:"49.99",
+        title:"Baggy short",
+        price:"15,000",
         image:"/images/2.jpeg",
         code: "Y523201"
     },
     {
         id:10,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Mini clutch bag",
+        price:"9,000",
         image:"/images/10.jpeg",
         code: "Y523201"
     },
     {
         id:11,
-        title:"Cantilever chair",
-        price:"28.99",
+        title:"Bag",
+        price:"10,000",
         image:"/images/11.jpeg",
         code: "Y523201"
     },
     {
         id:13,
-        title:"Cantilever chair",
-        price:"28.99",
+        title:"Designer bag",
+        price:"14,000",
         image:"/images/13.jpeg",
         code: "Y523201"
     },
     {
         id:5,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Basic top",
+        price:"7,500",
         image:"/images/5.jpeg",
         code: "Y523201"
     },
     {
         id:14,
-        title:"Cantilever chair",
-        price:"99.99",
+        title:"Designer bag",
+        price:"14,000",
         image:"/images/14.jpeg",
         code: "Y523201"
     },
     {
         id:16,
-        title:"Cantilever chair",
-        price:"49.99",
+        title:"Fashion bag",
+        price:"12,000",
         image:"/images/16.jpeg",
         code: "Y523201"
     },
     {
         id:8,
-        title:"Cantilever chair",
-        price:"99.99",
+        title:"Vintage",
+        price:"8,000",
         image:"/images/8.jpeg",
         code: "Y523201"
     },
     {
         id:15,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Designer Bag",
+        price:"14,000",
         image:"/images/15.jpeg",
         code: "Y523201"
     },
@@ -178,16 +178,16 @@ export const LatestProductTabHeaders = ["All", "New Arrival", "Best Seller", "Fe
 export const LatestProducts = [
     {
         id:1,
-        title:"Comfort Handy Craft",
-        price:"39.99",
+        title:"Polen bag",
+        price:"11,500",
         oldPrice: "39.99",
         image:"/images/17.jpeg",
         category:"New Arrival"
     },
     {
         id:2,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Fashion bag",
+        price:"12,000",
         oldPrice: "39.99",
         image:"/images/18.jpeg",
         category:"Best Seller"
@@ -195,33 +195,57 @@ export const LatestProducts = [
     {
         id:3,
         title:"Zara Boxers",
-        price:"39.99",
+        price:"3,800",
         oldPrice: "39.99",
         image:"/images/19.jpeg",
         category:"Special Offer"
     },
     {
         id:4,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Hermes slippers",
+        price:"9,000",
         oldPrice: "39.99",
         image:"/images/20.jpeg",
         category:"Featured"
     },
     {
         id:5,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Cotten polo (400g)",
+        price:"10,000",
         oldPrice: "39.99",
         image:"/images/21.jpeg",
         category:"Best Seller"
     },
     {
         id:6,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Cotten polo (400g)",
+        price:"10,000",
         oldPrice: "39.99",
         image:"/images/22.jpeg",
+        category:"New Arrival"
+    },
+    {
+        id:7,
+        title:"Hermes slippers",
+        price:"9,000",
+        oldPrice: "39.99",
+        image:"/images/shirt-1.jpeg",
+        category:"Featured"
+    },
+    {
+        id:8,
+        title:"Cotten polo (400g)",
+        price:"10,000",
+        oldPrice: "39.99",
+        image:"/images/bag-1.jpeg",
+        category:"Best Seller"
+    },
+    {
+        id:9,
+        title:"Cotten polo (400g)",
+        price:"10,000",
+        oldPrice: "39.99",
+        image:"/images/img-3.jpeg",
         category:"New Arrival"
     }
 ]
@@ -256,29 +280,29 @@ export const Offers = [
 export const TrendingProducts = [
     {
         id:1,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Men short",
+        price:"16,000",
         oldPrice: "39.99",
         image:"/images/23.jpeg",
     },
     {
         id:2,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Men short",
+        price:"16,000",
         oldPrice: "39.99",
         image:"/images/24.jpeg"
     },
     {
         id:3,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Men short",
+        price:"16,000",
         oldPrice: "39.99",
         image:"/images/25.jpeg"
     },
     {
         id:4,
-        title:"Cantilever chair",
-        price:"39.99",
+        title:"Men short",
+        price:"16,000",
         oldPrice: "39.99",
         image:"/images/26.jpeg"
     }

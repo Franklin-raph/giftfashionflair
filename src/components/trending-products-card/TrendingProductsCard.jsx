@@ -8,7 +8,8 @@ const TrendingProductsCard = ({card}) => {
             </div>
             <div className='text-center text-[#151875] flex flex-col text-[14px] mt-3'>
                 <p className='mb-1'>{card.title}</p>
-                <p>${card.price} <span className='ml-4 text-[#1518754D] text-[12px] line-through'>${card.oldPrice}</span> </p>
+                <p>₦{card.price}</p>
+                {/* <p>₦{card.price} <span className='ml-4 text-[#1518754D] text-[12px] line-through'>₦{card.oldPrice}</span> </p> */}
             </div>
         </div>
   )
