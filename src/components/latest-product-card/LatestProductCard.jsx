@@ -42,7 +42,7 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
       `Hi! I'm interested in this item from your store:%0A%0A` +
       `🛍️ *${currentProduct.title}*%0A` +
       `💰 *Price: ₦${currentProduct.price}*%0A` +
-      `🖼️ Image: ${currentProduct.image}%0A%0A` +
+      `🖼️ Image: https://giftfashionflair.vercel.app${currentProduct.image}%0A%0A` +
       `Please let me know if it's available. Thank you!`
 
     const url = `https://wa.me/${SELLER_WHATSAPP}?text=${message}`
