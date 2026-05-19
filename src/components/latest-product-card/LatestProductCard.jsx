@@ -3,6 +3,7 @@ import { BiCart, BiHeart, BiX, BiCamera, BiChevronLeft, BiChevronRight } from 'r
 import { FaWhatsapp } from 'react-icons/fa'
 
 const SELLER_WHATSAPP = '2347088501332' // seller's number in international format (234 = Nigeria)
+const SITE_BASE_URL = 'https://giftfashionflair.vercel.app' // base URL of the deployed site
 
 const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
   const [showModal, setShowModal] = useState(false)
@@ -38,11 +39,17 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
   }
 
   const handleWhatsApp = () => {
+    // Build a full absolute image URL so WhatsApp can fetch and preview it
+    const rawImage = currentProduct.image || ''
+    const fullImageUrl = rawImage.startsWith('http')
+      ? rawImage                            // already absolute (e.g. Cloudinary, Supabase, etc.)
+      : `${SITE_BASE_URL}${rawImage.startsWith('/') ? '' : '/'}${rawImage}` // relative → absolute
+
     const message =
       `Hi! I'm interested in this item from your store:%0A%0A` +
       `🛍️ *${currentProduct.title}*%0A` +
-      `💰 *Price: ₦${currentProduct.price}*%0A` +
-      `🖼️ Image: https://giftfashionflair.vercel.app${currentProduct.image}%0A%0A` +
+      `💰 *Price: ₦${currentProduct.price}*%0A%0A` +
+      `🖼️ ${fullImageUrl}%0A%0A` +
       `Please let me know if it's available. Thank you!`
 
     const url = `https://wa.me/${SELLER_WHATSAPP}?text=${message}`
@@ -194,7 +201,7 @@ const LatestProductCard = ({ product, allProducts = [], productIndex = 0 }) => {
                 className='bg-[#25D366] text-white py-[10px] px-8 rounded-[2px] text-[14px] flex items-center justify-center gap-2 hover:bg-[#1ebe5d] transition-colors w-full text-center'
               >
                 <FaWhatsapp className='text-[18px]' />
-                Send via WhatsApp
+                Send via WhatsApp.
               </button>
             </div>
 
