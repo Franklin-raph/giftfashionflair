@@ -60,8 +60,8 @@ export const HeroData = [
 export const FeaturedProducts = [
     {
         id:1,
-        title:"Cantilever chair,,,,",
-        price:"39.99",
+        title:"2 piece set",
+        price:"13,000",
         image:"/images/1.jpeg",
         code: "Y523201"
     },
@@ -226,24 +226,24 @@ export const LatestProducts = [
     },
     {
         id:7,
-        title:"Hermes slippers",
-        price:"9,000",
+        title:"Vintage Shirt",
+        price:"8,000",
         oldPrice: "39.99",
         image:"/images/shirt-1.jpeg",
         category:"Featured"
     },
     {
         id:8,
-        title:"Cotten polo (400g)",
-        price:"10,000",
+        title:"Bag",
+        price:"13,000",
         oldPrice: "39.99",
         image:"/images/bag-1.jpeg",
         category:"Best Seller"
     },
     {
         id:9,
-        title:"Cotten polo (400g)",
-        price:"10,000",
+        title:"Trendy Gown",
+        price:"15,000",
         oldPrice: "39.99",
         image:"/images/img-3.jpeg",
         category:"New Arrival"
@@ -253,7 +253,7 @@ export const LatestProducts = [
 export const Offers = [
     {
         id: 1,
-        title: "Free Shipping on Orders Over $50",
+        title: "Free Shipping on Orders Over ₦50,000",
         image: "/images/free.png",
         description: "Shop your favourite styles and enjoy free delivery straight to your door — no hidden fees, just great fashion."
     },

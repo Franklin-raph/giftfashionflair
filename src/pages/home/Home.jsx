@@ -286,8 +286,8 @@ const Home = () => {
                         <div className='flex items-center gap-3'>
                             <button className='bg-[#FB2E86] text-white py-[9px] px-8 rounded-[2px]'>Contact Seller</button>
                             <div className='text-[#151875] text-[14px]'>
-                                <p>Unisex Co-Ord Set</p>
-                                <p className='font-[300]'>₦40.99</p>
+                                <p>Quality Junkoso for Men</p>
+                                <p className='font-[300]'>₦23,000</p>
                             </div>
                         </div>
                     </div>

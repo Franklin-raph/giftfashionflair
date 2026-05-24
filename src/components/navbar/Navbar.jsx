@@ -26,6 +26,7 @@ const Navbar = () => {
     const inputRef = useRef(null)
     const mobileInputRef = useRef(null)
     const mobileSearchBarRef = useRef(null)
+    const dropdownRef = useRef(null)  // ← NEW
 
     const filtered = searchQuery.trim().length > 0
         ? allProducts.filter(p =>
@@ -34,7 +35,6 @@ const Navbar = () => {
           ).slice(0, 6)
         : []
 
-    // Calculate dropdown position anchored to the search bar using absolute (scrollY-aware)
     const updateDropdownRect = () => {
         if (mobileSearchBarRef.current) {
             const rect = mobileSearchBarRef.current.getBoundingClientRect()
@@ -46,7 +46,6 @@ const Navbar = () => {
         }
     }
 
-    // Re-anchor on scroll and resize while mobile search is open
     useEffect(() => {
         if (!mobileSearchOpen) return
         updateDropdownRect()
@@ -58,12 +57,13 @@ const Navbar = () => {
         }
     }, [mobileSearchOpen])
 
-    // Close dropdown when clicking outside
+    // ← UPDATED: now also checks dropdownRef so clicks inside the portal don't trigger close
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (
                 searchRef.current && !searchRef.current.contains(e.target) &&
-                mobileSearchBarRef.current && !mobileSearchBarRef.current.contains(e.target)
+                mobileSearchBarRef.current && !mobileSearchBarRef.current.contains(e.target) &&
+                dropdownRef.current && !dropdownRef.current.contains(e.target)
             ) {
                 setShowDropdown(false)
             }
@@ -111,13 +111,11 @@ const Navbar = () => {
         })
     }
 
-    // Rendered into document.body via portal — absolute positioning with scrollY offset
-    // means it moves naturally with the page, never "floats" in viewport on scroll
-    const MobileDropdownPortal = () => {
-        if (!mobileSearchOpen || !showDropdown || !searchQuery.trim() || !dropdownRect) return null
-
-        return ReactDOM.createPortal(
+    // ← UPDATED: now inline JSX instead of a nested component, so the ref stays stable
+    const mobileDropdownPortal = mobileSearchOpen && showDropdown && searchQuery.trim() && dropdownRect
+        ? ReactDOM.createPortal(
             <div
+                ref={dropdownRef}  // ← ref attached here
                 style={{
                     position: 'absolute',
                     top: `${dropdownRect.top}px`,
@@ -158,7 +156,7 @@ const Navbar = () => {
             </div>,
             document.body
         )
-    }
+        : null
 
     return (
         <div className='w-full'>
@@ -309,7 +307,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Dropdown — portalled to document.body */}
-            <MobileDropdownPortal />
+            {mobileDropdownPortal}
         </div>
     )
 }
