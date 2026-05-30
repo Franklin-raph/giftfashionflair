@@ -177,6 +177,46 @@ export const LatestProductTabHeaders = ["All", "New Arrival", "Best Seller", "Fe
 
 export const LatestProducts = [
     {
+        id:10,
+        title:"Available in lemon and brown ",
+        price:"13,000",
+        oldPrice: "39.99",
+        image:"/images/lemon-brown.jpeg",
+        category:"New Arrival"
+    },
+    {
+        id:11,
+        title:"Mesh 2 piece  available",
+        price:"12,000",
+        oldPrice: "39.99",
+        image:"/images/mesh-2.jpeg",
+        category:"Best Seller"
+    },
+    {
+        id:12,
+        title:"Sexy gown available",
+        price:"7,800",
+        oldPrice: "39.99",
+        image:"/images/sexy-gown.jpeg",
+        category:"Special Offer"
+    },
+    {
+        id:13,
+        title:"Quality 2 piece available ",
+        price:"12,000",
+        oldPrice: "39.99",
+        image:"/images/Quality-2-piece.jpeg",
+        category:"Featured"
+    },
+    {
+        id:14,
+        title:"Luxury stone mesh gown",
+        price:"13,000",
+        oldPrice: "39.99",
+        image:"/images/Luxury-stone-mesh-gown.jpeg",
+        category:"Best Seller"
+    },
+    {
         id:1,
         title:"Polen bag",
         price:"11,500",
