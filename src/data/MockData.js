@@ -181,7 +181,7 @@ export const LatestProducts = [
         title:"Trendy gown available",
         price:"9,500",
         oldPrice: "39.99",
-        image:"/images/Trendy-gown.jpeg",
+        image:"/images/Trendy-gown.png",
         category:"New Arrival"
     },
     {
