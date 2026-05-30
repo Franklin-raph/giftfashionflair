@@ -41,10 +41,10 @@ const Footer = () => {
             <div className='flex flex-col sm:flex-row items-center gap-3 sm:gap-0 w-full max-w-[1200px] justify-between mx-auto py-[1rem] px-4'>
                 <p className='text-sm text-center sm:text-left'>&copy; Gift Fashion Flair - All Rights Reserved</p>
                 <div className='flex items-center gap-5'>
-                    <a href="/" className='bg-[#151875] text-white p-[6px] rounded-full'>
+                    {/* <a href="/" className='bg-[#151875] text-white p-[6px] rounded-full'>
                         <LuFacebook />
-                    </a>
-                    <a href="/" className='bg-[#151875] text-white p-[6px] rounded-full'>
+                    </a> */}
+                    <a href="http://www.tiktok.com/@giftfashion_fliar" className='bg-[#151875] text-white p-[6px] rounded-full'>
                         <BsTiktok />
                     </a>
                     <a href='https://chat.whatsapp.com/JPD42b7XuyBCg0wSYN8Nz9' target='_blank' rel='noopener noreferrer' className='bg-[#151875] text-white p-[6px] rounded-full'>

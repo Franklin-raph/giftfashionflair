@@ -177,19 +177,19 @@ export const LatestProductTabHeaders = ["All", "New Arrival", "Best Seller", "Fe
 
 export const LatestProducts = [
     {
-        id:10,
-        title:"Available in lemon and brown ",
-        price:"13,000",
+        id:15,
+        title:"Trendy gown available",
+        price:"9,500",
         oldPrice: "39.99",
-        image:"/images/lemon-brown.jpeg",
+        image:"/images/Trendy-gown.jpeg",
         category:"New Arrival"
     },
     {
-        id:11,
-        title:"Mesh 2 piece  available",
+        id:16,
+        title:"Stone mesh 2 piece available",
         price:"12,000",
         oldPrice: "39.99",
-        image:"/images/mesh-2.jpeg",
+        image:"/images/Stone-mesh-2-piece.jpeg",
         category:"Best Seller"
     },
     {
@@ -207,6 +207,38 @@ export const LatestProducts = [
         oldPrice: "39.99",
         image:"/images/Quality-2-piece.jpeg",
         category:"Featured"
+    },
+    {
+        id:10,
+        title:"Available in lemon and brown ",
+        price:"13,000",
+        oldPrice: "39.99",
+        image:"/images/lemon-brown.jpeg",
+        category:"New Arrival"
+    },
+    {
+        id:11,
+        title:"Mesh 2 piece  available",
+        price:"12,000",
+        oldPrice: "39.99",
+        image:"/images/mesh-2.jpeg",
+        category:"Best Seller"
+    },
+    {
+        id:17,
+        title:"Trendy gown available",
+        price:"7,500",
+        oldPrice: "39.99",
+        image:"/images/Trendy-gown-2.jpeg",
+        category:"New Arrival"
+    },
+    {
+        id:18,
+        title:"2 in 1 bag and cap available as seen ",
+        price:"16,000",
+        oldPrice: "39.99",
+        image:"/images/bag-cap.jpeg",
+        category:"Best Seller"
     },
     {
         id:14,

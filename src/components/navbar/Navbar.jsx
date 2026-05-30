@@ -177,13 +177,15 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div className='flex items-center gap-1 cursor-pointer'>
-                            <BsTiktok />
-                            <p className='hidden sm:block'>08139362969</p>
+                            <a className='flex items-center gap-1 cursor-pointer' href='http://www.tiktok.com/@giftfashion_fliar' target='_blank' rel='noopener noreferrer'>
+                                <BsTiktok />
+                                <p className='hidden sm:block'>@giftfashion_fliar</p>
+                            </a>
                         </div>
-                        <div className='flex items-center gap-1 cursor-pointer'>
+                        {/* <div className='flex items-center gap-1 cursor-pointer'>
                             <FaFacebook />
                             <p className='hidden sm:block'>08139362969</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
